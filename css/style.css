@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(1, 1, 101);
+  margin: 0px;
+}
+.header {
+  background-color: rgb(0, 255, 255);
+  text-align: center;
+}
+.title-row {
+  margin-top: 42px;
+  margin-bottom: 21px;
+  text-align: center;
+}
+.instructions-title {
+  display: inline;
+  font-size: 18px;
+  color: rgb(0, 255, 255);
+  font-family: "Work Sans";
+}
+.instructions-row {
+  margin: 0px auto;
+  width: 400px;
+}
+.instructions-number {
+  padding-right: 25px;
+  font-family: "Work Sans";
+  font-size: 36px;
+  color: rgb(0, 255, 255);
+}
+.instructions-text {
+  padding: 5px;
+  font-family: "Work Sans";
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.door-row {
+  text-align: center;
+}
+.door-frame {
+  cursor: pointer;
+  padding: 10px;
+}
+.start-row {
+  margin: auto;
+  margin-top: 15px;
+  width: 120px;
+  height: 43px;
+  font-family: "Work Sans";
+  background-color: rgb(235, 101, 54); /* padding-top: 18px; */
+  font-size: 18px;
+  text-align: center;
+  color: rgb(1, 1, 101);
+  cursor: pointer;
+  padding: 5px;
+}
+.streak-row {
+  margin: 0px auto;
+  border-spacing: 15px;
+  border-collapse: separate;
+}
+.streak-text {
+  padding: 10px;
+  font-family: "Work Sans";
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.streak-number {
+  text-align: center;
+  padding: 8px;
+  margin: 30px;
+  width: 59px;
+  background-color: rgb(0, 255, 255);
+  font-family: "Work Sans";
+  font-size: 45px;
+}

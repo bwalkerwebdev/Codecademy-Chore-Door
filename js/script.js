@@ -19,8 +19,8 @@ let currentlyPlaying = true;
 let currentStreak = 0;
 let bestStreak = 0;
 
-const currentStreakValue = document.getElementById('current');
-const bestStreakValue = document.getElementById('best');
+const currentStreakValue = document.getElementById("current");
+const bestStreakValue = document.getElementById("best");
 
 const isBot = (door) => {
   if (door.src === botDoorPath) {
@@ -101,31 +101,31 @@ const startRound = () => {
   randomChoreDoorGenerator();
 };
 
-const gameOver = status => {
-    if (status === "win") {
-        startButton.innerHTML = "You win! Play again?"
-        if (bestStreak <= currentStreak) bestStreak++;
-        currentStreak++;
-    } else {
-        startButton.innerHTML = "Game over! Play again?"
-        if (bestStreak <= currentStreak) bestStreak = currentStreak;
-        currentStreak = 0;
-    }
-    currentlyPlaying = false;
-    currentStreakValue.innerHTML = currentStreak;
-    bestStreakValue.innerHTML = bestStreak;
-}
+const gameOver = (status) => {
+  if (status === "win") {
+    startButton.innerHTML = "You win! Play again?";
+    if (bestStreak <= currentStreak) bestStreak++;
+    currentStreak++;
+  } else {
+    startButton.innerHTML = "Game over! Play again?";
+    if (bestStreak <= currentStreak) bestStreak = currentStreak;
+    currentStreak = 0;
+  }
+  currentlyPlaying = false;
+  currentStreakValue.innerHTML = currentStreak;
+  bestStreakValue.innerHTML = bestStreak;
+};
 
 const updateScore = () => {
   currentStreak++;
-  document.getElementById('current-streak').innerHTML = currentStreak;
-}
+  document.getElementById("current-streak").innerHTML = currentStreak;
+};
 
 const updateBestStreak = () => {
   if (currentStreak) {
     bestStreak++;
   }
-  document.getElementById('highest-streak').innerHTML = bestStreak;
-}
+  document.getElementById("highest-streak").innerHTML = bestStreak;
+};
 
 startRound();
